@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
+  as :user do
+    get "signin" => 'devise/sessions#new'
+    delete "signout" => 'devise/sessions#destroy'
+    get "signup" => 'devise/registration#new'
+  end
+
   # http://127.0.0.1:3000/
   root 'pages#home'
 
