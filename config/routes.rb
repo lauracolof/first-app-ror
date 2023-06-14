@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # http://127.0.0.1:3000/
   root 'pages#home'
 
