@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-
+  before_action :authenticate_user!, except: [:index, :show]
   # GET /tweets or /tweets.json
   def index
     #Tweet with capitalize, refers to a model

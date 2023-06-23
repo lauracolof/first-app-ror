@@ -17,9 +17,11 @@
         <td> <%= tweet.user %> </td>
         <td> <%= tweet.content %> </td>
         <td> <%= link_to "Show", tweet %> </td>
+        <% if tweet.user == current_user %>
         <td> <%= link_to "Edit", edit_tweet_path(tweet) %> </td>
         <td> 
         <%= link_to "Delete", tweet, method: :delete, data: { confirm: "Are you sure?" } %> </td>
+        <%end%>
       </tr>
       <% end %>
     </tbody>
