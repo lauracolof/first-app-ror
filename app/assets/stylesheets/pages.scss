@@ -2,9 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+h1 {
+  font-family: fantasy;
+}
+
+h4 {
+  font-family: fantasy;
+  margin-top: 2rem;
+}
+
 .jumbotron-home {
   background-image: url(image_path('dark-guitar.jpg'));
   background-repeat: no-repeat;
   background-position: center center;
   background-size:cover;
+}
+
+.container {
+  .row {
+
+  }
 }
