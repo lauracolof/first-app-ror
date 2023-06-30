@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
+  get 'users/:username', to: "users#show", as: 'user'
   resources :items
   resources :tweets
   ActiveAdmin.routes(self)
   devise_for :users
   as :user do
-    get "signin" => 'devise/sessions#new'
-    delete "signout" => 'devise/sessions#destroy'
-    get "signup" => 'devise/registration#new'
+    get "signin", to: 'devise/sessions#new'
+    delete "signout", to: 'devise/sessions#destroy'
+    get "signup", to: 'devise/registration#new'
   end
 
   # http://127.0.0.1:3000/
