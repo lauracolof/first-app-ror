@@ -27,6 +27,7 @@ gem 'activeadmin', '~> 2.13', '>= 2.13.1'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 6.0.1'
+gem "acts_as_follower", github: "tcocca/acts_as_follower"
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
