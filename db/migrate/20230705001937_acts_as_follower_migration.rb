@@ -1,4 +1,4 @@
-class ActsAsFollowerMigration < ActiveRecord::Migration
+class ActsAsFollowerMigration < ActiveRecord::Migration[7.0]
   def self.up
     create_table :follows, force: true do |t|
       #polymorphic allows to do anything in the app
