@@ -7,7 +7,7 @@ Installation
 To set up the application locally, follow these steps:
 
 * Clone the repository: git clone https://github.com/lauracolof/first-app-ror.git
-* Navigate to the project directory: cd musicians-tribute-page
+* Navigate to the project directory: cd first-project
 * Install dependencies: bundle install
 * Set up the database: rails db:setup
 * Start the server: rails server
